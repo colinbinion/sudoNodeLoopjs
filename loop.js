@@ -17,6 +17,15 @@ function shouldContinue() {
 }
 
 // entire body executes in on 'tick'
-while (shouldContinue) {}
+while (shouldContinue) {
+  //1. node looks at pending timers and sees if any functions are ready to be called (setTimeout, setInterval)
+  //2. node looks at pendingOSTasks/pendingOperations and calls relevant callbacks
+  //3. pause execution. continue when..
+  //- a new pendingOSTask is done
+  //- a new pendingOperation is done
+  //- a timer is about to complete
+  //4. look at pendingTimers. call any setImmediate
+  //5. handle any 'close' events (cleanup code)
+}
 
 // exit back to terminal

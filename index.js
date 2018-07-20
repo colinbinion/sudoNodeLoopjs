@@ -1,3 +1,9 @@
+const cluster = require('cluster');
+
+console.log('====================================');
+console.log(cluster.isMaster);
+console.log('====================================');
+
 const express = require('express');
 const app = express();
 

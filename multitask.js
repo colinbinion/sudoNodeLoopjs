@@ -34,7 +34,7 @@ fs.readFile('multiTask.js', 'utf8', () => {
 });
 
 // causes performance issues
-// doHash();
-// doHash();
-// doHash();
-// doHash();
+doHash();
+doHash();
+doHash();
+doHash();
